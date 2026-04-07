@@ -498,7 +498,7 @@ export default function Landing() {
 
       {/* STATS */}
       <section style={{background:C.surface,borderTop:"1px solid "+C.border,borderBottom:"1px solid "+C.border,padding:"48px 24px"}}>
-        <div style={{maxWidth:860,margin:"0 auto",display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:32,textAlign:"center"}}>
+        <div style={{maxWidth:860,margin:"0 auto",display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:16,textAlign:"center",gridTemplateColumns:"repeat(auto-fit, minmax(140px, 1fr))"}}>
           {[{n:70,suf:"%",l:"dos pacientes não conseguem descrever a semana com precisão"},{n:10,suf:"min",l:"economizados por sessão com o painel clínico inteligente"},{n:3,suf:"x",l:"mais engajamento entre sessões com check-ins diários"}].map(function(s,i){
             return(
               <Section key={i} delay={i*.1} style={{padding:"0 12px"}}>
